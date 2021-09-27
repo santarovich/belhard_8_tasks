@@ -14,5 +14,4 @@
 """
 from datetime import date
 
-
 CURRENT_YEAR = date.today().year

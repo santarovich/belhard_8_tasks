@@ -3,13 +3,11 @@
 **kwargs). Хотелось бы ускорить этот процесс таким образом, чтобы была
 возможность задавать атрибуты прямо при создании объекта класса.
 
-class Man(object):
+class Man:
     pass
 
 me = Man(height = 180, weight = 80)
-Traceback (most recent call last):
-File "<stdin>", line 20, in <module>
-    TypeError: object.new() takes no parameters
+TypeError: Man() takes no arguments
 
-Сделать возможным данный механизм
+Сделать возможным данный механизм с помощью метакласса DynamicInitMeta
 """
